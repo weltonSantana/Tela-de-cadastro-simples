@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(84, 150, 225);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+  
+}
+
+.card {
+  background-color: #05233e80;
+  padding: 50px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px;
+
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(230, 230, 230)
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  color: #ffffff;
+  border-bottom: 2px solid rgb(230, 230, 230);
+  background-color: #05233e80;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid rgb(234, 234, 234);
+}
+
+.label-float label{
+  color: #ffffff;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 10px;
+  margin-top: 0;
+  color: #ffffff;
+
+}
+
+button{
+  background-color:  #05233e80;
+  border-color: #071f3580;
+  color: #ffffff;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .3s ease-out;
+  width: 200px;
+
+}
+
+button:hover{
+  background-color:  #68a3e7;
+  color: #70d4eb;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+
+}
+
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p{
+  color: #ffffff;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+
+}
+
+a:hover{
+  color: #1d73ce;
+}
+
+#msgErro{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSucesso{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
